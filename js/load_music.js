@@ -13,10 +13,10 @@ window.addEventListener('load', function () {
             let albumInfo = albumList[albumId];
 
             albumName.innerHTML = albumInfo.albumName;
-            albumImg.src = `/img/album/${albumInfo.albumImg}`;
+            albumImg.src = `./img/album/${albumInfo.albumImg}`;
 
             let albumFirstSong = albumInfo.musicList[0].musicLink;
-            albumMusicPlay.src = `/music/${albumId}/${albumFirstSong}`;
+            albumMusicPlay.src = `./music/${albumId}/${albumFirstSong}`;
 
             albumMusicList.innerHTML = '';
             let musicList = albumInfo.musicList;
@@ -46,7 +46,7 @@ window.addEventListener('load', function () {
             musicItemList.forEach(musicItem => {
                 musicItem.addEventListener('click', function () {
                     let musicLink = musicItem.dataset.musicLink;
-                    albumMusicPlay.src = `/music/${albumId}/${musicLink}`;
+                    albumMusicPlay.src = `./music/${albumId}/${musicLink}`;
                 })
             });
         })
