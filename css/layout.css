@@ -1,0 +1,33 @@
+header {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+
+    border-bottom: 0.2rem solid var(--primary-color);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 114rem;
+    height: 7rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    background: var(--white);
+}
+
+.header__logo {
+    width: auto;
+    height: 5rem;
+}
+
+.header__hello {
+    color: var(--primary-color);
+
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
