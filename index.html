@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Roboto - Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awsome - Icon -->
+    <script src="https://kit.fontawesome.com/aeb1173b82.js" crossorigin="anonymous"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="header__container">
+            <img class="header__logo" src="/img/fpolyLogo.png">
+            <div class="header__hello">
+                Xin chào, Trần Cao Minh
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- music list -->
+    <section class="music-list">
+        <div class="music-list__heading">
+            <div class="music-list__contain-img-present">
+                <img class="music-list__img-present" src="/img/fpolyLogo.png">
+            </div>
+            <div class="music-list__inf">
+                <div class="music-list__name">
+                    <!-- add name by load_music.js -->
+                </div>
+                <div class="music-list__controller">
+                    <audio class="music-list__audio" src="/music/justinBieber/Let Me Love You.mp3" controls
+                        autoplay></audio>
+                </div>
+                <label for="music-list__view-detail">
+                    <span class="music-list__view-detail-button">
+                        Chi tiết
+                        <i class="music-list__view-detail-icon fas fa-chevron-down"></i>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <input type="checkbox" id="music-list__view-detail">
+        <ul class="music-list__detail">
+            <!-- add music item by load_music.js -->
+        </ul>
+    </section>
+    <!-- end music list -->
+
+    <!-- album -->
+    <section class="album">
+        <ul class="album__list">
+            <li class="album__item" data-album-id="sonTung">
+                <img class="album__img" src="/img/album/sonTung.jpg">
+                <div class="album__overlay">
+                    <i class="album__play-icon far fa-play-circle"></i>
+                </div>
+            </li>
+            <li class="album__item" data-album-id="alanWalker">
+                <img class="album__img" src="/img/album/alanWalker.jpg">
+                <div class="album__overlay">
+                    <i class="album__play-icon far fa-play-circle"></i>
+                </div>
+            </li>
+            <li class="album__item" data-album-id="justinBieber">
+                <img class="album__img" src="/img/album/justinBieber.jpg">
+                <div class="album__overlay">
+                    <i class="album__play-icon far fa-play-circle"></i>
+                </div>
+            </li>
+            <li class="album__item" data-album-id="deamn">
+                <img class="album__img" src="/img/album/deamn.jpg">
+                <div class="album__overlay">
+                    <i class="album__play-icon far fa-play-circle"></i>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- end album -->
+
+    <!-- link JS -->
+    <script src="/js/album_info.js"></script>
+    <script src="/js/load_music.js"></script>
+</body>
+
+</html>
